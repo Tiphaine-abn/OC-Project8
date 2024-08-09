@@ -3,9 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Nina Carducci - Portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +12,10 @@
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
 
+	<title>Nina Carducci - Photographe</title>
+
+	<meta name="description"
+		content="Découvrez le portfolio de Nina Carducci, photographe à Bordeaux. Projets captivants et services photo sur mesure. Contactez-nous pour des séances personnalisées !">
 	<!-- Open Graph -->
 	<meta property="og:title" content="Nina Carducci - Portfolio">
 	<meta property="og:locale" content="fr_FR">
@@ -40,48 +42,43 @@
 
 	<!-- Rich Snippet -->
 	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "ProfessionalService",
+	  "name": "Nina Carducci",
+	  "description": "Photographe professionnelle basée à Bordeaux offrant des services sur mesure pour des projets photo captivants.",
+	  "image": "https://tiphaine-abn.github.io/OC-Project8/assets/images/slider/edward-cisneros-wedding.webp",
+	  "url": "https://tiphaine-abn.github.io/OC-Project8/",
+	  "telephone": "+33 5 56 67 78 89",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "68 avenue Alsace-Lorraine",
+		"addressLocality": "Bordeaux",
+		"addressRegion": "Nouvelle-Aquitaine",
+		"postalCode": "33200",
+		"addressCountry": "FR"
+	  },
+	  "openingHoursSpecification": [
 		{
-		  "@context": "https://schema.org",
-		  "@type": "Service",
-		  "serviceType": "Photographie",
-		  "name": "Nina Carducci",
-		  "image": "https://tiphaine-abn.github.io/OC-Project8/assets/images/slider/edward-cisneros-wedding.webp",
-		  "jobTitle": "Photographe professionnelle",
-		  "url": "https://tiphaine-abn.github.io/OC-Project8/",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressLocality": "Bordeaux",
-			"addressRegion": "Nouvelle-Aquitaine",
-			"postalCode": "33200",
-			"addressCountry": "FR",
-			"geo": {
-			  "@type": "GeoCoordinates",
-			  "latitude": 44.8352,
-			  "longitude": -0.5965
-			}
-		  },
-		  "telephone": "+33 5 56 67 78 89",
-		  "openingHoursSpecification": {
-			"@type": "OpeningHoursSpecification",
-			"dayOfWeek": [
-			  "Monday",
-			  "Tuesday",
-			  "Wednesday",
-			  "Thursday",
-			  "Friday"
-			],
-			"opens": "10:00",
-			"closes": "19:00"
-		  },
-		  "sameAs": [
-			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
-		  ]
+		  "@type": "OpeningHoursSpecification",
+		  "dayOfWeek": [
+			"http://schema.org/Monday",
+			"http://schema.org/Tuesday",
+			"http://schema.org/Wednesday",
+			"http://schema.org/Thursday",
+			"http://schema.org/Friday"
+		  ],
+		  "opens": "10:00",
+		  "closes": "19:00"
 		}
+	  ],
+	  "sameAs": [
+		"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+	  ],
+	  "priceRange": "€€€",
+	  "additionalType": "http://schema.org/Place"
+	}
 	</script>
-
-	<title>Nina Carducci - Photographe</title>
-
 </head>
 
 <body>
@@ -93,8 +90,10 @@
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.png" alt="Icône Instagram"></a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"
+						aria-label="Ouverture de la page Instagrame de Nina Carducci dans un nouvel onglet"><img
+							src="assets/images/instagram.png"
+							alt="Icône Instagram - Accéder à la page Instagram de Nina Carducci"></a></li>
 			</ul>
 		</nav>
 	</header>
