@@ -260,6 +260,27 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer {
+	background-color: #f8f9fa;
+	color: #333;
+	padding: 40px;
+	border-top: 1px solid #ddd;
+}
+
+.footer_infos_block h3 {
+	color: #222;
+	font-size: 26px;
+	margin-bottom: 1rem;
+}
+
+.footer_infos.adress_and_opening {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
 @media all and (max-width:1180px) {
 	.picture {
 		flex: 2

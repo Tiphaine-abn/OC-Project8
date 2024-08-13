@@ -38,46 +38,6 @@
 	<meta name="twitter:url" content="https://tiphaine-abn.github.io/OC-Project8/">
 	<meta name="twitter:creator" content="@NinaCarducci">
 	<meta name="twitter:site" content="@NinaCarducci">
-
-	<!-- Rich Snippet -->
-	<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "ProfessionalService",
-	  "name": "Nina Carducci",
-	  "description": "Photographe professionnelle basée à Bordeaux offrant des services sur mesure pour des projets photo captivants.",
-	  "image": "https://tiphaine-abn.github.io/OC-Project8/assets/images/slider/edward-cisneros-wedding.webp",
-	  "url": "https://tiphaine-abn.github.io/OC-Project8/",
-	  "telephone": "+33 5 56 67 78 89",
-	  "address": {
-		"@type": "PostalAddress",
-		"streetAddress": "68 avenue Alsace-Lorraine",
-		"addressLocality": "Bordeaux",
-		"addressRegion": "Nouvelle-Aquitaine",
-		"postalCode": "33200",
-		"addressCountry": "FR"
-	  },
-	  "openingHoursSpecification": [
-		{
-		  "@type": "OpeningHoursSpecification",
-		  "dayOfWeek": [
-			"http://schema.org/Monday",
-			"http://schema.org/Tuesday",
-			"http://schema.org/Wednesday",
-			"http://schema.org/Thursday",
-			"http://schema.org/Friday"
-		  ],
-		  "opens": "10:00",
-		  "closes": "19:00"
-		}
-	  ],
-	  "sameAs": [
-		"https://www.instagram.com/ninacarducci.photo/?hl=fr"
-	  ],
-	  "priceRange": "€€€",
-	  "additionalType": "http://schema.org/Place"
-	}
-	</script>
 </head>
 
 <body>
@@ -127,7 +87,7 @@
 		<section id="about">
 			<aside class="picture left">
 				<img src="./assets/images/nina-carducci-portraits.webp" class="d-block w-100 img-fluid"
-					alt="Portrait of Nina Carducci, photographer" width="554" height="554">
+					alt="Portrait of Nina Carducci, photographer" width="310" height="310">
 			</aside>
 			<article id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -188,13 +148,13 @@
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<h3 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+						<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
 							qu’un
 							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion.
 							L’inexactitude
 							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
 							vérité.
-						</h3>
+						</p>
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
@@ -243,17 +203,17 @@
 				</article>
 			</div>
 		</section>
-		<aside class="quote">
+		<article class="quote">
 			<figure>
 				<blockquote>
-					<h3 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression,
+					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression,
 						des
-						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h3>
+						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
-		</aside>
-		<footer id="contact">
+		</article>
+		<div id="contact">
 			<div class="container">
 				<div class="form-container">
 					<h2>Une question ? Une demande de devis ?</h2>
@@ -268,17 +228,74 @@
 						<input type="submit" value="Envoyer" />
 					</form>
 				</div>
-				<aside class="picture right">
+				<article class="picture right">
 					<img src="./assets/images/camera.webp" class="d-block w-100 img-fluid"
 						alt="Camera used for photo shoots" width="418" height="417">
-				</aside>
+				</article>
 			</div>
-		</footer>
+		</div>
 	</main>
+	<footer>
+		<div itemscope itemtype="https://schema.org/LocalBusiness" class="footer_infos_block">
+			<h3 itemprop="name">Nina Carducci</h3>
+
+			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"
+				class="footer_infos adress_and_opening">
+				<span itemprop="streetAddress" class="adress_and_opening">Avenue Alsace-Lorraine</span>
+				<span><span itemprop="postalCode" class="adress_and_opening">33200</span>
+					<span itemprop="addressLocality" class="adress_and_opening">Bordeaux</span></span>
+				<span itemprop="telephone" class="adress_and_opening">05 56 67 78 89</span>
+				<span itemprop="openingHours" content="Mo,Tu,We,Th,Fr 10:00-19:00" class="adress_and_opening">lundi
+					- vendredi de 10h à 19h</span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts JavaScript -->
+	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/scripts.min.js" defer></script>
+
+	<!-- Rich Snippet -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "ProfessionalService",
+		  "name": "Nina Carducci",
+		  "description": "Photographe professionnelle basée à Bordeaux offrant des services sur mesure pour des projets photo captivants.",
+		  "image": "https://tiphaine-abn.github.io/OC-Project8/assets/images/slider/edward-cisneros-wedding.webp",
+		  "url": "https://tiphaine-abn.github.io/OC-Project8/",
+		  "telephone": "+33 5 56 67 78 89",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"addressRegion": "Nouvelle-Aquitaine",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  "openingHoursSpecification": [
+			{
+			  "@type": "OpeningHoursSpecification",
+			  "dayOfWeek": [
+				"http://schema.org/Monday",
+				"http://schema.org/Tuesday",
+				"http://schema.org/Wednesday",
+				"http://schema.org/Thursday",
+				"http://schema.org/Friday"
+			  ],
+			  "opens": "10:00",
+			  "closes": "19:00"
+			}
+		  ],
+		  "sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		  ],
+		  "priceRange": "€€€",
+		  "additionalType": "http://schema.org/Place"
+		}
+</script>
 </body>
-<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-<script src="./assets/scripts.min.js" defer></script>
 
 </html>
